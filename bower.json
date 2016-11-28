@@ -1,0 +1,17 @@
+{
+  "name": "angularjs",
+  "description": "A modern responsive front-end framework based on Material Design",
+  "homepage": "https://github.com/fabienfelix/angularjs",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-cookies": "^1.5.8",
+    "jquery": "2.1.1",
+    "materialize": "^0.97.8",
+    "angular-animate": "^1.5.8",
+    "angular-resource": "^1.5.8"
+  },
+  "analytics": false
+}
