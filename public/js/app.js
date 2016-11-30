@@ -1,21 +1,6 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-// angular.module('myApp', [
-//     'ngRoute',
-//     'ngCookies',
-//     'ngResource'
-// 
-// ])
-
-// .config(['$routeProvider', function($routeProvider) {
-//     $routeProvider.when('/view2', {
-//         templateUrl: './html/view2.html',
-//         controller: 'View2Ctrl'
-//     });
-// }])
-
-// Declare app level module which depends on filters, and services
 var app = angular.module('myApp', [
     'ngRoute',
     'ngCookies',

@@ -7,7 +7,13 @@ mongoose.connect('mongodb://localhost/angularjs') // connect to MongoDB
     .then(() => console.log('connection database succesful'))
     .catch((err) => console.error(err));
 
-var contactSchema = mongoose.Schema({ firstname: 'string', lastname: 'string', age: 'number' });
+
+var contactSchema = mongoose.Schema({ 
+  firstname: 'string', 
+  lastname: 'string', 
+  age: 'number' 
+});
+
 var Contact = mongoose.model('Contact', contactSchema);
 
 exports.contacts = function(req, res) {
@@ -24,6 +30,8 @@ exports.contact = function(req, res) {
 
 exports.createContact = function(req, res) {
   var contact = new Contact(req.body);
+  console.log("contact : "+contact);
+  console.log("req.body : "+contact);
   contact.save();
   res.json(req.body);
 };

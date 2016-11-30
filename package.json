@@ -5,6 +5,7 @@
   "description": "An example express project",
   "readme": "README.md",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bower": "^1.7.7",
     "ejs": "^2.5.3",
     "express": "^4.14",

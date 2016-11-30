@@ -28,8 +28,11 @@ app.controller("ContactsEditCtrl", function($scope, $routeParams, $location, Con
     }
 
     if ($routeParams.id) {
+      console.log("update");
       Contact.update($scope.contact, success, failure);
     } else {
+      console.log("create");
+      console.log("contact : "+$scope.contact.firstname);
       Contact.create($scope.contact, success, failure);
     }
 
