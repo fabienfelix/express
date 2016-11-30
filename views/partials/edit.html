@@ -1,0 +1,17 @@
+<h3>Contact Details</h3>
+<form class="col s12" ng-submit="submit()">
+    <div class="input-field">
+        <input id="first_name" class="validate" type="text" name="firstname" placeholder="First Name" ng-model="contact.firstname" required>
+        <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field">
+        <input id="last_name" class="validate" type="text" name="lastname" placeholder="Last Name" ng-model="contact.lastname" required>
+        <label for="last_name">Last Name</label>
+    </div>
+    <div class="input-field">
+        <input id="age" class="validate" type="text" name="age" placeholder="Age" ng-model="contact.age" required>
+        <label for="age">Age</label>
+    </div>
+    <a class="waves-effect waves-light btn" ng-click="cancel()">Cancel</a>
+    <a class="waves-effect waves-light btn" ng-submit="submit()">Save</a>
+</form>
