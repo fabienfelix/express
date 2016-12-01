@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise; // Use native Node promises
-mongoose.connect('mongodb://localhost/angularjs') // connect to MongoDB
+mongoose.connect('mongodb://localhost/express') // connect to MongoDB
     .then(() => console.log('connection database succesful'))
     .catch((err) => console.error(err));
 
